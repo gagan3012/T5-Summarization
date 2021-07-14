@@ -15,3 +15,6 @@ from pytorch_lightning import Trainer
 from pytorch_lightning.callbacks.early_stopping import EarlyStopping
 from pytorch_lightning import LightningDataModule
 from pytorch_lightning import LightningModule
+
+torch.cuda.empty_cache()
+pl.seed_everything(42)
