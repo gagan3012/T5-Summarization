@@ -57,3 +57,7 @@ class DataModule(Dataset):
             return_attention_mask=True,
             add_special_tokens=True,
             return_tensors="pt",
+        )
+
+        output_encoding = self.tokenizer(
+            data_row["output_text"],
