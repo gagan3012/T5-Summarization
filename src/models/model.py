@@ -11,3 +11,5 @@ from transformers import (
 from torch.utils.data import Dataset, DataLoader
 import pytorch_lightning as pl
 from pytorch_lightning.loggers import MLFlowLogger
+from pytorch_lightning import Trainer
+from pytorch_lightning.callbacks.early_stopping import EarlyStopping
