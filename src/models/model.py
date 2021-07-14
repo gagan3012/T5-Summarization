@@ -69,3 +69,5 @@ class DataModule(Dataset):
             return_tensors="pt",
         )
 
+        labels = output_encoding["input_ids"]
+        labels[
