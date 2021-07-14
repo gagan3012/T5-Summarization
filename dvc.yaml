@@ -1,0 +1,29 @@
+stages:
+  train:
+    cmd: python src/models/train_model.py
+    deps:
+      - data/processed
+      - src/models/train_model.py
+    outs:
+      - models:
+          persist: true
+    metrics:
+      - reports/training_metrics.txt:
+          cache: false
+  eval:
+    cmd: python src/models/predict_model.py
+    deps:
+      - data/processed
+      - models
+      - src/models/predict_model.py
+    metrics:
+      - reports/metrics.txt:
+          cache: false
+  process_data:
+    cmd: python src/data/make_dataset.py
+    deps:
+      - data/raw
+      - src/data/make_dataset.py
+    outs:
+      - data/processed:
+          persist: true
