@@ -11,3 +11,4 @@ def make_dataset(dataset='cnn_dailymail', split='train', version="3.0.0"):
     return df
 
 if __name__ == '__main__':
+    make_dataset(dataset='cnn_dailymail', split='train', version="3.0.0")
