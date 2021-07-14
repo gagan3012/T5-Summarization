@@ -21,3 +21,6 @@ pl.seed_everything(42)
 
 
 class DataModule(Dataset):
+    """
+    Data Module for pytorch
+    """
