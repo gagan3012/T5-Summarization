@@ -51,3 +51,6 @@ class DataModule(Dataset):
 
         input_encoding = self.tokenizer(
             data_row["input_text"],
+            max_length=self.source_max_token_len,
+            padding="max_length",
+            truncation=True,
