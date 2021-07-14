@@ -16,3 +16,11 @@ Instructions
 1. Process your data, train and evaluate your model using `dvc repro eval.dvc` or `make reproduce`
 1. When you're happy with the result, commit files (including .dvc files) to git.
  
+Project Organization
+------------
+
+    ├── LICENSE
+    ├── Makefile           <- Makefile with commands like `make dirs` or `make clean`
+    ├── README.md          <- The top-level README for developers using this project.
+    ├── data
+    │   ├── processed      <- The final, canonical data sets for modeling.
