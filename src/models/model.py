@@ -18,3 +18,6 @@ from pytorch_lightning import LightningModule
 
 torch.cuda.empty_cache()
 pl.seed_everything(42)
+
+
+class DataModule(Dataset):
