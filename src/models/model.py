@@ -47,3 +47,7 @@ class DataModule(Dataset):
         return len(self.data)
 
     def __getitem__(self, index: int):
+        data_row = self.data.iloc[index]
+
+        input_encoding = self.tokenizer(
+            data_row["input_text"],
