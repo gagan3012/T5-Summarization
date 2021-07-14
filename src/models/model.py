@@ -61,3 +61,7 @@ class DataModule(Dataset):
 
         output_encoding = self.tokenizer(
             data_row["output_text"],
+            max_length=self.target_max_token_len,
+            padding="max_length",
+            truncation=True,
+            return_attention_mask=True,
