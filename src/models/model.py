@@ -44,3 +44,6 @@ class DataModule(Dataset):
         self.tokenizer = tokenizer
 
     def __len__(self):
+        return len(self.data)
+
+    def __getitem__(self, index: int):
