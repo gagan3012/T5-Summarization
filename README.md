@@ -63,3 +63,9 @@ Project Organization
     │       └── visualize.py
     │
     ├── tox.ini            <- tox file with settings for running tox; see tox.testrun.org
+    └── train.dvc          <- Traing a model on the processed data.
+
+
+--------
+
+<p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
