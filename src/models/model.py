@@ -35,3 +35,5 @@ class DataModule(Dataset):
         """
         :param data:
         :param tokenizer:
+        :param source_max_token_len:
+        :param target_max_token_len:
