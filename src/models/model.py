@@ -24,3 +24,6 @@ class DataModule(Dataset):
     """
     Data Module for pytorch
     """
+
+    def __init__(
+            self,
