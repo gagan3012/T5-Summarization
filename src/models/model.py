@@ -115,3 +115,9 @@ class PLDataModule(LightningDataModule):
     def setup(self, stage=None):
         self.train_dataset = DataModule(
             self.train_df,
+            self.tokenizer,
+            self.source_max_token_len,
+            self.target_max_token_len,
+        )
+        self.test_dataset = DataModule(
+            self.test_df,
