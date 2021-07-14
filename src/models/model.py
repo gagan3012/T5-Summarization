@@ -93,3 +93,11 @@ class PLDataModule(LightningDataModule):
             source_max_token_len: int = 512,
             target_max_token_len: int = 512,
             batch_size: int = 4,
+            split: float = 0.1
+    ):
+        """
+        :param data_df:
+        :param tokenizer:
+        :param source_max_token_len:
+        :param target_max_token_len:
+        :param batch_size:
