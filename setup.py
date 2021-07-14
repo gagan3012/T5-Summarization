@@ -4,3 +4,4 @@ setup(
     name='src',
     packages=find_packages(),
     version='0.1.0',
+)
