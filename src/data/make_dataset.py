@@ -10,3 +10,4 @@ def make_dataset(dataset='cnn_dailymail', split='train', version="3.0.0"):
     df['output_text'] = dataset['target']
     return df
 
+if __name__ == '__main__':
