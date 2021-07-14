@@ -5,3 +5,4 @@ import pandas as pd
 from datasets import load_metric
 from transformers import (
     AdamW,
+    T5TokenizerFast as T5Tokenizer,
