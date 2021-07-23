@@ -361,6 +361,7 @@ class Summarization:
             )
         elif model_type == "mt5":
             self.tokenizer = MT5Tokenizer.from_pretrained(f"{model_dir}")
+            self.model = MT5ForConditionalGeneration.from_pretrained(
 
         if use_gpu:
             if torch.cuda.is_available():
