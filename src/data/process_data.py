@@ -7,3 +7,4 @@ def process_data(split='train'):
     print(df.columns)
     df.to_csv('C:/Users/gbhat/Documents/GitHub/summarization/data/processed/{}.csv'.format(split))
 
+
