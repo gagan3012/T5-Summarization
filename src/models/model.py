@@ -450,4 +450,3 @@ class Summarization:
             )
             for g in generated_ids
         ]
-        return preds
