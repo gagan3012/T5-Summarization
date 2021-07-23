@@ -451,3 +451,4 @@ class Summarization:
             for g in generated_ids
         ]
         return preds[0]
+    def evaluate(
