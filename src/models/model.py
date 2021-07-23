@@ -455,3 +455,4 @@ class Summarization:
     def evaluate(
             self,
             test_df: pd.DataFrame,
+            metrics: str = "rouge"
