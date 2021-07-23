@@ -364,6 +364,7 @@ class Summarization:
             self.model = MT5ForConditionalGeneration.from_pretrained(
                 f"{model_dir}", return_dict=True
             )
+        elif model_type == "byt5":
 
         if use_gpu:
             if torch.cuda.is_available():
