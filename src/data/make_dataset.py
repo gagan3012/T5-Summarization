@@ -10,5 +10,6 @@ def make_dataset(dataset='cnn_dailymail', split='train'):
     df['highlights'] = dataset['highlights']
     df.to_csv('C:/Users/gbhat/Documents/GitHub/summarization/data/raw/{}.csv'.format(split))
 
+
 if __name__ == '__main__':
     make_dataset(dataset='cnn_dailymail', split='train', version="3.0.0")
