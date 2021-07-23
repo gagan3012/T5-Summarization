@@ -354,7 +354,6 @@ class Summarization:
             model_dir (str, optional): path to model directory. Defaults to "outputs".
             use_gpu (bool, optional): if True, model uses gpu for inferencing/prediction. Defaults to True.
         """
-        self.model = T5ForConditionalGeneration.from_pretrained(f"{model_dir}")
         self.tokenizer = T5Tokenizer.from_pretrained(f"{model_dir}")
 
         if use_gpu:
