@@ -253,6 +253,7 @@ class Summarization:
         loads T5/MT5 Model model for training/finetuning
         Args:
             model_name (str, optional): exact model architecture name, "t5-base" or "t5-large". Defaults to "t5-base".
+            :param model_type:
         """
         self.tokenizer = T5Tokenizer.from_pretrained(f"{model_name}")
         self.model = T5ForConditionalGeneration.from_pretrained(
