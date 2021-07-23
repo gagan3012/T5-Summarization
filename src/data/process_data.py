@@ -9,3 +9,4 @@ def process_data(split='train'):
 
 
 if __name__ == '__main__':
+    process_data(split='train')
