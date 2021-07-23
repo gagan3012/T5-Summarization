@@ -313,7 +313,6 @@ class Summarization:
             tokenizer=self.tokenizer, model=self.model, output=outputdir
         )
 
-        #     dirpath="checkpoints",
         #     filename="best-checkpoint-{epoch}-{train_loss:.2f}",
         #     save_top_k=-1,
         #     verbose=True,
