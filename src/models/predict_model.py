@@ -11,3 +11,4 @@ def predict_model(text):
     return pre_summary
 
 if __name__ == '__main__':
+    pre_summary = predict_model(text)
