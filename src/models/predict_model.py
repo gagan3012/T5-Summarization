@@ -11,4 +11,5 @@ def predict_model(text):
     return pre_summary
 
 if __name__ == '__main__':
+    text = make_dataset(split="test")['input_text'][0]
     pre_summary = predict_model(text)
