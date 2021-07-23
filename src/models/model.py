@@ -346,6 +346,7 @@ class Summarization:
 
     def load_model(
             self, model_dir: str = "../../models", use_gpu: bool = False
+            self, model_type: str = 't5', model_dir: str = "../../models", use_gpu: bool = False
     ):
         """
         loads a checkpoint for inferencing/prediction
