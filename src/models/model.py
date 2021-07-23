@@ -359,6 +359,7 @@ class Summarization:
             self.model = T5ForConditionalGeneration.from_pretrained(
                 f"{model_dir}", return_dict=True
             )
+        elif model_type == "mt5":
 
         if use_gpu:
             if torch.cuda.is_available():
