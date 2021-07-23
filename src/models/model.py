@@ -248,7 +248,6 @@ class Summarization:
         """ initiates Summarization class """
         pass
 
-    def from_pretrained(self, model_name="t5-base") -> None:
         """
         loads T5/MT5 Model model for training/finetuning
         Args:
