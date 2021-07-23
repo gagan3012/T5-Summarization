@@ -10,3 +10,4 @@ def predict_model(text):
     pre_summary = model.predict(text)
     return pre_summary
 
+if __name__ == '__main__':
