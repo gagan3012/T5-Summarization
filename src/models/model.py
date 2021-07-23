@@ -363,6 +363,7 @@ class Summarization:
             self.tokenizer = MT5Tokenizer.from_pretrained(f"{model_dir}")
             self.model = MT5ForConditionalGeneration.from_pretrained(
                 f"{model_dir}", return_dict=True
+            )
 
         if use_gpu:
             if torch.cuda.is_available():
