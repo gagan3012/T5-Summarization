@@ -453,3 +453,4 @@ class Summarization:
         return preds[0]
 
     def evaluate(
+            self,
