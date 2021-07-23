@@ -313,7 +313,6 @@ class Summarization:
             tokenizer=self.tokenizer, model=self.model, output=outputdir
         )
 
-        #     verbose=True,
         #     monitor="train_loss",
         #     mode="min",
         # )
