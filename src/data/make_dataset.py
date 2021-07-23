@@ -4,7 +4,6 @@ import pandas as pd
 
 def make_dataset(dataset='cnn_dailymail', split='train'):
     """make dataset for summarisation"""
-    dataset = load_dataset(dataset, split=split, script_version=version)
     df = pd.DataFrame()
     df['input_text'] = dataset['concepts']
     df['output_text'] = dataset['target']
