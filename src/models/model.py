@@ -357,6 +357,7 @@ class Summarization:
         if model_type == "t5":
             self.tokenizer = T5Tokenizer.from_pretrained(f"{model_dir}")
             self.model = T5ForConditionalGeneration.from_pretrained(
+                f"{model_dir}", return_dict=True
 
         if use_gpu:
             if torch.cuda.is_available():
