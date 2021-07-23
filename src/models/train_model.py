@@ -14,3 +14,7 @@ def train_model():
     model.from_pretrained('t5','t5-base')
     model.train(train_df=train_df, eval_df=eval_df, batch_size=4, max_epochs=3, use_gpu=True)
     model.save_model()
+
+
+if __name__ == '__main__':
+    train_model()
