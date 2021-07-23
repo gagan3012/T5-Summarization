@@ -336,6 +336,7 @@ class Summarization:
 
         trainer = Trainer(
             logger=logger,
+            logger=[logger, MLlogger],
             callbacks=early_stop_callback,
             max_epochs=max_epochs,
             gpus=gpus,
