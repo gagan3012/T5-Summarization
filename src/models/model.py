@@ -257,6 +257,7 @@ class Summarization:
         """
         if model_type == "t5":
             self.tokenizer = T5Tokenizer.from_pretrained(f"{model_name}")
+            self.model = T5ForConditionalGeneration.from_pretrained(
 
     def train(
             self,
