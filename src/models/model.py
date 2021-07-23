@@ -268,6 +268,7 @@ class Summarization:
         elif model_type == "byt5":
             self.tokenizer = ByT5Tokenizer.from_pretrained(f"{model_name}")
             self.model = T5ForConditionalGeneration.from_pretrained(
+                f"{model_name}", return_dict=True
 
     def train(
             self,
