@@ -456,3 +456,4 @@ class Summarization:
             self,
             test_df: pd.DataFrame,
             metrics: str = "rouge"
+    ):
