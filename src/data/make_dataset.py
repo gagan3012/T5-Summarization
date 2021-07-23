@@ -6,7 +6,6 @@ def make_dataset(dataset='cnn_dailymail', split='train'):
     """make dataset for summarisation"""
     dataset = load_dataset(dataset, '3.0.0', split=split)
     df = pd.DataFrame()
-    df['input_text'] = dataset['concepts']
     df['output_text'] = dataset['target']
     return df
 
