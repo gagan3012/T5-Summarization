@@ -260,6 +260,7 @@ class Summarization:
             self.model = T5ForConditionalGeneration.from_pretrained(
                 f"{model_name}", return_dict=True
             )
+        elif model_type == "mt5":
             self.tokenizer = MT5Tokenizer.from_pretrained(f"{model_name}")
 
     def train(
