@@ -256,6 +256,7 @@ class Summarization:
             :param model_type:
         """
         if model_type == "t5":
+            self.tokenizer = T5Tokenizer.from_pretrained(f"{model_name}")
 
     def train(
             self,
