@@ -314,7 +314,6 @@ class Summarization:
         )
 
         #     mode="min",
-        # )
         MLlogger = MLFlowLogger(experiment_name="Summarization",
 
         logger = MLFlowLogger(experiment_name="Summarization")
