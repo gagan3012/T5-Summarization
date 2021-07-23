@@ -503,3 +503,7 @@ class Summarization:
                 'rougeLsum Low recall': results["rougeLsum"].low.recall,
                 'rougeLsum Low F1': results["rougeLsum"].low.fmeasure,
                 'rougeLsum Mid Precision': results["rougeLsum"].mid.precision,
+                'rougeLsum Mid recall': results["rougeLsum"].mid.recall,
+                'rougeLsum Mid F1': results["rougeLsum"].mid.fmeasure,
+                'rougeLsum High Precision': results["rougeLsum"].high.precision,
+                'rougeLsum High recall': results["rougeLsum"].high.recall,
