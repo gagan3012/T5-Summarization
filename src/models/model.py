@@ -459,3 +459,4 @@ class Summarization:
     ):
         metric = load_metric(metrics)
         input_text = test_df['input_text']
+        references = test_df['output_text']
