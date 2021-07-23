@@ -10,3 +10,4 @@ def evaluate_model():
     test_df =  pd.load_csv('../../data/processed/test.csv')
     model = Summarization()
     model.load_model()
+    results = model.evaluate(test_df=test_df,metrics="rouge")
