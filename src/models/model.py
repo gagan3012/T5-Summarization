@@ -313,7 +313,6 @@ class Summarization:
             tokenizer=self.tokenizer, model=self.model, output=outputdir
         )
 
-        #     monitor="train_loss",
         #     mode="min",
         # )
         MLlogger = MLFlowLogger(experiment_name="Summarization",
