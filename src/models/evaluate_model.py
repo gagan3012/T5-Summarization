@@ -7,3 +7,4 @@ def evaluate_model():
     """
     Evaluate model using rouge measure
     """
+    test_df =  pd.load_csv('../../data/processed/test.csv')
