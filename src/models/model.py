@@ -262,6 +262,7 @@ class Summarization:
             )
         elif model_type == "mt5":
             self.tokenizer = MT5Tokenizer.from_pretrained(f"{model_name}")
+            self.model = MT5ForConditionalGeneration.from_pretrained(
 
     def train(
             self,
