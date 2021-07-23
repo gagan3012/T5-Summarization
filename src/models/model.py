@@ -265,6 +265,7 @@ class Summarization:
             self.model = MT5ForConditionalGeneration.from_pretrained(
                 f"{model_name}", return_dict=True
             )
+        elif model_type == "byt5":
             self.tokenizer = ByT5Tokenizer.from_pretrained(f"{model_name}")
 
     def train(
