@@ -13,3 +13,4 @@ def evaluate_model():
     results = model.evaluate(test_df=test_df,metrics="rouge")
     with dagshub.dagshub_logger() as logger:
         logger.log_metrics(results)
+    return results
