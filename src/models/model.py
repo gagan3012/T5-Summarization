@@ -360,6 +360,7 @@ class Summarization:
                 f"{model_dir}", return_dict=True
             )
         elif model_type == "mt5":
+            self.tokenizer = MT5Tokenizer.from_pretrained(f"{model_dir}")
 
         if use_gpu:
             if torch.cuda.is_available():
