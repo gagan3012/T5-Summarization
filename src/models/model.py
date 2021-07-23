@@ -367,6 +367,7 @@ class Summarization:
         elif model_type == "byt5":
             self.tokenizer = ByT5Tokenizer.from_pretrained(f"{model_dir}")
             self.model = T5ForConditionalGeneration.from_pretrained(
+                f"{model_dir}", return_dict=True
 
         if use_gpu:
             if torch.cuda.is_available():
