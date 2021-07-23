@@ -458,3 +458,4 @@ class Summarization:
             metrics: str = "rouge"
     ):
         metric = load_metric(metrics)
+        input_text = test_df['input_text']
