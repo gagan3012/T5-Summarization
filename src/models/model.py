@@ -474,3 +474,9 @@ class Summarization:
                 'Rouge_1 Mid F1': results["rouge1"].mid.fmeasure,
                 'Rouge_1 High Precision': results["rouge1"].high.precision,
                 'Rouge_1 High recall': results["rouge1"].high.recall,
+                'Rouge_1 High F1': results["rouge1"].high.fmeasure,
+            },
+            'Rouge 2': {
+                'Rouge_2 Low Precision': results["rouge2"].low.precision,
+                'Rouge_2 Low recall': results["rouge2"].low.recall,
+                'Rouge_2 Low F1': results["rouge2"].low.fmeasure,
