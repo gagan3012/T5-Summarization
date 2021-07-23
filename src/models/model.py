@@ -457,3 +457,4 @@ class Summarization:
             test_df: pd.DataFrame,
             metrics: str = "rouge"
     ):
+        metric = load_metric(metrics)
