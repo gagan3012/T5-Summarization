@@ -8,3 +8,4 @@ def process_data(split='train'):
     df.to_csv('C:/Users/gbhat/Documents/GitHub/summarization/data/processed/{}.csv'.format(split))
 
 
+if __name__ == '__main__':
