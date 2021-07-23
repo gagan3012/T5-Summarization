@@ -355,6 +355,7 @@ class Summarization:
             use_gpu (bool, optional): if True, model uses gpu for inferencing/prediction. Defaults to True.
         """
         if model_type == "t5":
+            self.tokenizer = T5Tokenizer.from_pretrained(f"{model_dir}")
 
         if use_gpu:
             if torch.cuda.is_available():
