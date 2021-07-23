@@ -354,6 +354,7 @@ class Summarization:
             model_dir (str, optional): path to model directory. Defaults to "outputs".
             use_gpu (bool, optional): if True, model uses gpu for inferencing/prediction. Defaults to True.
         """
+        if model_type == "t5":
 
         if use_gpu:
             if torch.cuda.is_available():
