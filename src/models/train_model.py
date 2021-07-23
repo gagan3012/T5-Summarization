@@ -7,8 +7,8 @@ def train_model():
     Train the model
     """
     # Load the data
-    train_df = make_dataset(split = 'train')
-    eval_df = make_dataset(split = 'test')
+    train_df = pd.read_csv('../../data/processed/train.csv')
+    eval_df = pd.read_csv('../../data/processed/validation.csv')
 
     model = Summarization()
     model.from_pretrained('t5-base')
