@@ -259,6 +259,7 @@ class Summarization:
             self.tokenizer = T5Tokenizer.from_pretrained(f"{model_name}")
             self.model = T5ForConditionalGeneration.from_pretrained(
                 f"{model_name}", return_dict=True
+            )
 
     def train(
             self,
