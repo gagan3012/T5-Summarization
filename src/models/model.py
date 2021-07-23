@@ -461,3 +461,10 @@ class Summarization:
         input_text = test_df['input_text']
         references = test_df['output_text']
         predictions = [self.predict(x) for x in input_text]
+
+        results = metric.compute(predictions=predictions, references=references)
+
+        output = {
+            'Rouge 1': {
+                'Rouge_1 Low Precision': results["rouge1"].low.precision,
+                'Rouge_1 Low recall': results["rouge1"].low.recall,
