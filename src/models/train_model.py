@@ -19,6 +19,7 @@ def train_model():
     model.from_pretrained(model_type=params['model_type'], model_name=params['model_name'])
 
     model.train(train_df=train_df, eval_df=eval_df,
+                batch_size=params['batch_size'], max_epochs=params['max_epoch'],
 
 
 if __name__ == '__main__':
