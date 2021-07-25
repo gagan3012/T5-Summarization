@@ -1,4 +1,5 @@
-from src.data.make_dataset import make_dataset
+import yaml
+
 from .model import Summarization
 
 def predict_model(text):
