@@ -18,3 +18,4 @@ if __name__ == '__main__':
 
     make_dataset(dataset=params['data'], split='train')
     make_dataset(dataset=params['data'], split='test')
+    make_dataset(dataset=params['data'], split='validation')
