@@ -282,6 +282,7 @@ class Summarization:
             use_gpu: bool = True,
             outputdir: str = "models",
             early_stopping_patience_epochs: int = 0,  # 0 to disable early stopping feature
+            learning_rate: float = 0.0001,
     ):
         """
         trains T5/MT5 model on custom dataset
