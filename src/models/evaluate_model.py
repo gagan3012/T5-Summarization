@@ -12,6 +12,7 @@ def evaluate_model():
     with open("params.yml") as f:
         params = yaml.safe_load(f)
 
+    test_df = pd.load_csv('data/processed/test.csv')
     model = Summarization()
     model.load_model()
     results = model.evaluate(test_df=test_df,metrics="rouge")
