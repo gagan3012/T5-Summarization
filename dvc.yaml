@@ -1,4 +1,5 @@
 stages:
+  process_data:
   train:
     cmd: python src/models/train_model.py
     deps:
