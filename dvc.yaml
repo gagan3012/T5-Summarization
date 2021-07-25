@@ -15,7 +15,6 @@ stages:
   train:
     cmd: python src/models/train_model.py
     deps:
-      - data/processed
       - src/models/train_model.py
     outs:
       - models:
