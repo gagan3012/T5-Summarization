@@ -13,3 +13,4 @@ def make_dataset(dataset='cnn_dailymail', split='train'):
 
 
 if __name__ == '__main__':
+    with open("params.yml") as f:
