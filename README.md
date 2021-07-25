@@ -15,6 +15,7 @@ Instructions
 1. To save the raw data to the DVC cache, run `dvc commit raw_data.dvc`
 1. Edit the code files to your heart's desire.
 1. Process your data, train and evaluate your model using `dvc repro eval.dvc` or `make reproduce`
+1. Process your data, train and evaluate your model using `make run`
 1. When you're happy with the result, commit files (including .dvc files) to git.
  
 Project Organization
