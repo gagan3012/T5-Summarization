@@ -44,7 +44,6 @@ push:
 pull:
 	dvc pull
 
-reproduce:
 	dvc repro eval.dvc
 ## run the DVC pipeline - recompute any modified outputs such as processed data or trained models
 
