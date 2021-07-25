@@ -35,6 +35,7 @@ Project Organization
     │   └── metrics.txt    <- Relevant metrics after evaluating the model.
     │   └── training_metrics.txt    <- Relevant metrics from training the model.
     │
+    ├── requirements.txt   <- The requirements file for reproducing the analysis environment
     │
     ├── setup.py           <- makes project pip installable (pip install -e .) so src can be imported
     ├── src                <- Source code for use in this project.
