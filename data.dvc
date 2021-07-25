@@ -7,3 +7,4 @@ deps:
   size: 672
 cmd: python src/data/make_dataset.py
 outs:
+- md5: 2ab20ac1b58df875a590b07d0e04eb5b.dir
