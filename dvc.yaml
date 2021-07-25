@@ -31,7 +31,6 @@ stages:
       - params.yml
       - data/processed/test.csv
       - models
-      - src/models/predict_model.py
     metrics:
       - reports/metrics.txt:
           cache: false
