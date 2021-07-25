@@ -55,7 +55,7 @@ Project Organization
     │       └── visualize.py
     │
     ├── tox.ini            <- tox file with settings for running tox; see tox.testrun.org
-    └── train.dvc          <- Traing a model on the processed data.
+    └── data.dvc          <- Traing a model on the processed data.
 
 
 --------
