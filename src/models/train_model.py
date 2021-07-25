@@ -1,3 +1,5 @@
+import yaml
+
 from src.models.model import Summarization
 import pandas as pd
 
@@ -6,6 +8,9 @@ def train_model():
     """
     Train the model
     """
+    with open("params.yml") as f:
+        params = yaml.safe_load(f)
+
     # Load the data
     train_df = pd.read_csv('../../data/processed/train.csv')
     eval_df = pd.read_csv('../../data/processed/validation.csv')
