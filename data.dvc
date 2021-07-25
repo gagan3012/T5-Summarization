@@ -3,3 +3,4 @@ deps:
   md5: 0d9abcc4df44299e22f5e75f88b493eb
   size: 170
 - path: src/data/make_dataset.py
+  md5: dfb6390a95395535b92a5c59b3e3b559
