@@ -15,6 +15,7 @@ stages:
   train:
     cmd: python src/models/train_model.py
     deps:
+      - params.yml
       - src/models/train_model.py
     outs:
       - models:
