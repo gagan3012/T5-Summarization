@@ -29,7 +29,6 @@ Project Organization
     ├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
     │                         the creator's initials, and a short `-` delimited description, e.g.
     │                         `1.0-jqp-initial-data-exploration`.
-    │
     ├── process_data.dvc   <- Process the raw data and prepare it for training.
     ├── raw_data.dvc       <- Keeps the raw data versioned.
     │
