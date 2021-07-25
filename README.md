@@ -45,7 +45,7 @@ Project Organization
     │   │   └── make_dataset.py
     │   │   └── process_data.py
     │   │
-    │   │   │                 predictions
+    │   ├── models         <- Scripts to train models 
     │   │   ├── predict_model.py
     │   │   └── train_model.py
     │   │
