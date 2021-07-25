@@ -9,6 +9,7 @@ def evaluate_model():
     """
     Evaluate model using rouge measure
     """
+    with open("params.yml") as f:
     model = Summarization()
     model.load_model()
     results = model.evaluate(test_df=test_df,metrics="rouge")
