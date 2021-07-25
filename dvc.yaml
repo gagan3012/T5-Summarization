@@ -17,6 +17,7 @@ stages:
     deps:
       - params.yml
       - data/processed/train.csv
+      - data/processed/validation.csv
       - src/models/train_model.py
     outs:
       - models:
