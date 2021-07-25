@@ -17,3 +17,4 @@ if __name__ == '__main__':
         params = yaml.safe_load(f)
 
     make_dataset(dataset=params['data'], split='train')
+    make_dataset(dataset=params['data'], split='test')
