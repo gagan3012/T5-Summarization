@@ -12,8 +12,8 @@ def train_model():
         params = yaml.safe_load(f)
 
     # Load the data
-    train_df = pd.read_csv('../../data/processed/train.csv')
-    eval_df = pd.read_csv('../../data/processed/validation.csv')
+    train_df = pd.read_csv('data/processed/train.csv')
+    eval_df = pd.read_csv('data/processed/validation.csv')
 
     model = Summarization()
     model.from_pretrained('t5','t5-base')
