@@ -1,3 +1,4 @@
 data: cnn_dailymail
 batch_size: 4
 num_workers: 2
+model_type: t5
