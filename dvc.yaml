@@ -28,7 +28,6 @@ stages:
   eval:
     cmd: python src/models/evaluate_model.py
     deps:
-      - data/processed
       - models
       - src/models/predict_model.py
     metrics:
