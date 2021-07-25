@@ -1,1 +1,2 @@
 data: cnn_dailymail
+batch_size: 4
