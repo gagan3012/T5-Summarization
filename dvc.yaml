@@ -10,6 +10,7 @@ stages:
           persist: true
       - data/processed/train.csv:
           persist: true
+      - data/processed/validation.csv:
   train:
     cmd: python src/models/train_model.py
     deps:
