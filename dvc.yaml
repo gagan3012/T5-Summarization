@@ -26,6 +26,7 @@ stages:
       - reports/training_metrics.txt:
           cache: false
   eval:
+    cmd: python src/models/evaluate_model.py
     deps:
       - data/processed
       - models
