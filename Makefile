@@ -46,6 +46,7 @@ pull:
 
 ## run the DVC pipeline - recompute any modified outputs such as processed data or trained models
 run:
+	dvc repro dvc.yaml
 
 #################################################################################
 # PROJECT RULES                                                                 #
