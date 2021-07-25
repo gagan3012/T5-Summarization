@@ -35,7 +35,6 @@ stages:
     metrics:
       - reports/metrics.txt:
           cache: false
-    deps:
       - data/raw
       - src/data/make_dataset.py
     outs:
