@@ -35,7 +35,6 @@ stages:
     metrics:
       - reports/metrics.txt:
           cache: false
-      - src/data/make_dataset.py
     outs:
       - data/processed:
           persist: true
