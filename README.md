@@ -32,7 +32,6 @@ Project Organization
     ├── references         <- Data dictionaries, manuals, and all other explanatory materials.
     │
     ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
-    │   └── figures        <- Generated graphics and figures to be used in reporting
     │   └── metrics.txt    <- Relevant metrics after evaluating the model.
     │   └── training_metrics.txt    <- Relevant metrics from training the model.
     │
