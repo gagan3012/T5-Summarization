@@ -2,6 +2,7 @@ stages:
   process_data:
     cmd: python src/data/process_data.py
     deps:
+      - params.yml
   train:
     cmd: python src/models/train_model.py
     deps:
