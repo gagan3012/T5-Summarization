@@ -35,6 +35,5 @@ stages:
     metrics:
       - reports/metrics.txt:
           cache: false
-      - data/processed:
           persist: true
 
