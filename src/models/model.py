@@ -302,6 +302,7 @@ class Summarization:
             if val_loss does not improve after the specied number of epochs. set 0 to disable early stopping.
             Defaults to 0 (disabled)
             :param learning_rate:
+            :param adam_epsilon:
         """
         self.target_max_token_len = target_max_token_len
         self.data_module = PLDataModule(
