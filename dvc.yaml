@@ -26,7 +26,6 @@ stages:
       - reports/training_metrics.txt:
           cache: false
   eval:
-    cmd: python src/models/predict_model.py
     deps:
       - data/processed
       - models
