@@ -13,7 +13,7 @@ def predict_model(text):
 
 
     model = Summarization()
-    model.load_model()
+    model.load_model(model_type=params['model_type'], model_dir=params['model_dir'])
     pre_summary = model.predict(text)
     return pre_summary
 
