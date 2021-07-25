@@ -11,7 +11,6 @@ Instructions
 1. *Optional:* Run `make virtualenv` to create a python virtual environment. Skip if using conda or some other env manager.
     1. Run `source env/bin/activate` to activate the virtualenv. 
 1. Run `make requirements` to install required python packages.
-1. Process your data, train and evaluate your model using `dvc repro eval.dvc` or `make reproduce`
 1. Process your data, train and evaluate your model using `make run`
 1. When you're happy with the result, commit files (including .dvc files) to git.
  
