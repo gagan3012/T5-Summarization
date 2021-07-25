@@ -1,3 +1,4 @@
+.PHONY: clean dirs virtualenv lint requirements push pull run
 
 #################################################################################
 # GLOBALS                                                                       #
