@@ -312,6 +312,7 @@ class Summarization:
             batch_size=batch_size,
             source_max_token_len=source_max_token_len,
             target_max_token_len=target_max_token_len,
+            num_workers=num_workers,
         )
 
         self.T5Model = LightningModel(
