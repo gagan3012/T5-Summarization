@@ -111,6 +111,7 @@ class PLDataModule(LightningDataModule):
         self.target_max_token_len = target_max_token_len
         self.source_max_token_len = source_max_token_len
         self.tokenizer = tokenizer
+        self.num_workers = num_workers
 
     def setup(self, stage=None):
         self.train_dataset = DataModule(
