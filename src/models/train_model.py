@@ -33,6 +33,7 @@ def train_model():
     with open('wandb/latest-run/files/wandb-summary.json') as json_file:
         data = json.load(json_file)
 
+    with open('reports/training_metrics.txt', 'w') as fp:
         json.dump(data, fp)
 
 
