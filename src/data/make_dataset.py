@@ -8,6 +8,7 @@ import pprint
 
 def make_dataset(dataset='cnn_dailymail', split='train'):
     """make dataset for summarisation"""
+    if not os.path.exists('data/raw'):
     dataset = load_dataset(dataset, '3.0.0', split=split)
     df = pd.DataFrame()
     df['article'] = dataset['article']
