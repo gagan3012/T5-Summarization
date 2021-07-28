@@ -8,7 +8,6 @@
     md5: d41d8cd98f00b204e9800998ecf8427e
   cmd: python src/models/predict_model.py
   deps:
-  - path: data/processed
     md5: d751713988987e9331980363e24189ce.dir
   - path: models
     md5: d751713988987e9331980363e24189ce.dir
