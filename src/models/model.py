@@ -330,6 +330,7 @@ class Summarization:
         # MLlogger = MLFlowLogger(experiment_name="Summarization",
         #                        tracking_uri="https://dagshub.com/gagan3012/summarization.mlflow")\
 
+        WandLogger = WandbLogger(project="summarization-dagshub")
 
         early_stop_callback = (
             [
