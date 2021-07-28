@@ -77,6 +77,8 @@ class DataModule(Dataset):
             ] = -100
 
         return dict(
+            keywords=data_row["input_text"],
+            text=data_row["output_text"],
             keywords_input_ids=input_encoding["input_ids"].flatten(),
             keywords_attention_mask=input_encoding["attention_mask"].flatten(),
             labels=labels.flatten(),
