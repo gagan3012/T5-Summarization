@@ -11,6 +11,7 @@ stages:
           cache: true
       - data/processed/train.csv:
           persist: true
+          cache: true
       - data/processed/validation.csv:
           persist: true
   train:
