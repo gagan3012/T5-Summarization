@@ -38,7 +38,6 @@ lint:
 
 ## Upload Data to default DVC remote
 push:
-	dvc push
 
 ## Download Data from default DVC remote
 pull:
