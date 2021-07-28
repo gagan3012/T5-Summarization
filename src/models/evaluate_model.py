@@ -19,3 +19,4 @@ def evaluate_model():
     results = model.evaluate(test_df=test_df, metrics=params['metric'])
 
     with open('reports/metrics.txt', 'w') as fp:
+        json.dump(results, fp)
