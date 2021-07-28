@@ -10,6 +10,7 @@ def process_data(split='train'):
 
     df = pd.read_csv('data/raw/{}.csv'.format(split))
     df.columns = ['Unnamed: 0', 'input_text', 'output_text']
+    df = df.sample(frac=params['split'], replace=True, random_state=1)
     df.to_csv('data/processed/{}.csv'.format(split))
 
 
