@@ -22,4 +22,5 @@ def evaluate_model():
         json.dump(results, fp)
 
 
+if __name__ == '__main__':
     evaluate_model()
