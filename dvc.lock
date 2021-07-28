@@ -30,3 +30,5 @@ stages:
       md5: 3cb7b63891f12d53b3ef3e81a2e93f8e
       size: 986944
     - path: models
+      md5: 688745a9fb1cc7c8580887bae3873a39.dir
+      size: 486952666
