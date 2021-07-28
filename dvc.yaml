@@ -14,6 +14,7 @@ stages:
           cache: true
       - data/processed/validation.csv:
           persist: true
+          cache: true
   train:
     cmd: python src/models/train_model.py
     deps:
