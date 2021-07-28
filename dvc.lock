@@ -25,3 +25,8 @@ stages:
       size: 158
   eval:
     cmd: python src/models/evaluate_model.py
+    deps:
+    - path: data/processed/test.csv
+      md5: 3cb7b63891f12d53b3ef3e81a2e93f8e
+      size: 986944
+    - path: models
