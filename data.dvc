@@ -10,5 +10,4 @@ outs:
 - md5: 2ab20ac1b58df875a590b07d0e04eb5b.dir
   nfiles: 3
   path: data/raw
-  size: 1359144987
 md5: 158faff967ee7ee05e381cb6c9c7e217
