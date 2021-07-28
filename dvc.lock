@@ -44,3 +44,9 @@ stages:
       md5: 27d21366dca75caa1bb3777575cb126b
       size: 1596
   process_data:
+    cmd: python src/data/process_data.py
+    deps:
+    - path: data/raw
+      md5: d751713988987e9331980363e24189ce.dir
+      size: 0
+      nfiles: 0
