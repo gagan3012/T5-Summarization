@@ -1,8 +1,4 @@
 process_data:
-  cmd: python src/data/make_dataset.py
-  deps:
-  - path: data/raw
-    md5: d751713988987e9331980363e24189ce.dir
   - path: src/data/make_dataset.py
     md5: d41d8cd98f00b204e9800998ecf8427e
   outs:
