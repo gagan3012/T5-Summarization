@@ -93,3 +93,4 @@ coverage.xml
 .vscode
 /data
 
+wandb/
