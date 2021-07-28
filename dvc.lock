@@ -1,5 +1,4 @@
   cmd: python src/models/train_model.py
-  deps:
   - path: data/processed
     md5: d751713988987e9331980363e24189ce.dir
   - path: src/models/train_model.py
