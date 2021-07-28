@@ -22,3 +22,4 @@ def evaluate_model():
         json.dump(results, fp)
 
 
+    evaluate_model()
