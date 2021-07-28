@@ -164,6 +164,7 @@ class LightningModel(LightningModule):
         self.model = model
         self.tokenizer = tokenizer
         self.output = output
+        self.learning_rate = learning_rate
 
     def forward(self, input_ids, attention_mask, decoder_attention_mask, labels=None):
         """ forward step """
