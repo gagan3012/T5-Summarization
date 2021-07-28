@@ -9,3 +9,4 @@ source_dir: src
 model_dir: models/models/
 metric: rouge
 split: 0.02
+use_gpu: True
