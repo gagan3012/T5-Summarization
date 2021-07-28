@@ -1,6 +1,7 @@
 deps:
 - path: params.yml
   md5: d0f3e81bc9191e752a69761045a449d9
+  size: 196
 - path: src/data/make_dataset.py
   md5: dfb6390a95395535b92a5c59b3e3b559
   size: 672
