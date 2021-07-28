@@ -32,3 +32,8 @@ stages:
     - path: models
       md5: 688745a9fb1cc7c8580887bae3873a39.dir
       size: 486952666
+      nfiles: 10
+    - path: params.yml
+      md5: d0f3e81bc9191e752a69761045a449d9
+      size: 196
+    - path: src/models/evaluate_model.py
