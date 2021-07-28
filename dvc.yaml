@@ -8,6 +8,7 @@ stages:
     outs:
       - data/processed/test.csv:
           persist: true
+          cache: true
       - data/processed/train.csv:
           persist: true
       - data/processed/validation.csv:
