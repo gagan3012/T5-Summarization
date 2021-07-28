@@ -473,7 +473,9 @@ class Summarization:
         metric = load_metric(metrics)
         input_text = test_df['input_text']
         references = test_df['output_text']
-        predictions = [self.predict(x) for x in input_text]
+        references = references.to_list()
+
+        predictions = [self.predict(x) for x in tqdm(input_text)]
 
         results = metric.compute(predictions=predictions, references=references)
 
