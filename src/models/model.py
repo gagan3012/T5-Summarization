@@ -291,6 +291,7 @@ class Summarization:
             learning_rate: float = 0.0001,
             adam_epsilon: float = 0.01,
             num_workers: int = 2,
+            weight_decay: float = 0.0001
     ):
         """
         trains T5/MT5 model on custom dataset
