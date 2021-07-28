@@ -19,3 +19,9 @@ stages:
     - path: models
       md5: 688745a9fb1cc7c8580887bae3873a39.dir
       size: 486952666
+      nfiles: 10
+    - path: reports/training_metrics.txt
+      md5: 048a956b0eb431535d287bbc3322cf76
+      size: 158
+  eval:
+    cmd: python src/models/evaluate_model.py
