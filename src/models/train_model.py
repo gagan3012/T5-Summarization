@@ -24,9 +24,6 @@ def train_model():
     model.from_pretrained(model_type=params['model_type'], model_name=params['model_name'])
 
     model.train(train_df=train_df, eval_df=eval_df,
-                batch_size=params['batch_size'], max_epochs=params['max_epoch'],
-                use_gpu=params['use_gpu'], learning_rate=params['learning_rate'],
-                num_workers=params['num_workers'])
                 batch_size=params['batch_size'], max_epochs=params['epochs'],
                 use_gpu=params['use_gpu'], learning_rate=float(params['learning_rate']),
                 num_workers=int(params['num_workers']))
