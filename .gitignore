@@ -95,3 +95,4 @@ coverage.xml
 
 wandb/
 summarization-dagshub/
+/models
