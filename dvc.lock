@@ -1,13 +1,3 @@
-  - path: data/processed
-  - path: src/models/train_model.py
-    md5: d41d8cd98f00b204e9800998ecf8427e
-  outs:
-  - path: models
-    md5: d751713988987e9331980363e24189ce.dir
-  - path: reports/training_metrics.txt
-    md5: d41d8cd98f00b204e9800998ecf8427e
-  cmd: python src/models/predict_model.py
-  deps:
     md5: d751713988987e9331980363e24189ce.dir
   - path: models
     md5: d751713988987e9331980363e24189ce.dir
