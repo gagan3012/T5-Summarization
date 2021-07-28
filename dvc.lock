@@ -1,4 +1,3 @@
-train:
   cmd: python src/models/train_model.py
   deps:
   - path: data/processed
