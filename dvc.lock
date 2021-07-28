@@ -1,3 +1,4 @@
   outs:
-  - path: data/processed
-    md5: d751713988987e9331980363e24189ce.dir
+stages:
+  train:
+    cmd: python src/models/train_model.py
