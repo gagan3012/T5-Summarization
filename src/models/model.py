@@ -290,7 +290,6 @@ class Summarization:
             early_stopping_patience_epochs: int = 0,  # 0 to disable early stopping feature
             learning_rate: float = 0.0001,
             adam_epsilon: float = 0.01,
-            num_workers: int = 2
     ):
         """
         trains T5/MT5 model on custom dataset
