@@ -2,3 +2,20 @@ schema: '2.0'
 stages:
   train:
     cmd: python src/models/train_model.py
+    deps:
+    - path: data/processed/train.csv
+      md5: 51edd724b75a8e99a78b9138f8f37c60
+      size: 25012573
+    - path: data/processed/validation.csv
+      md5: 0900e2bb330df94cb045faddd0b945d1
+      size: 1138285
+    - path: params.yml
+      md5: d0f3e81bc9191e752a69761045a449d9
+      size: 196
+    - path: src/models/train_model.py
+      md5: fca8acf70f09cecd679ca1ddb2eef6a9
+      size: 1198
+    outs:
+    - path: models
+      md5: 688745a9fb1cc7c8580887bae3873a39.dir
+      size: 486952666
