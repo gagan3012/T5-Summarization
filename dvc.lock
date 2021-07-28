@@ -1,8 +1,3 @@
-  - path: src/models/predict_model.py
-    md5: d41d8cd98f00b204e9800998ecf8427e
-  outs:
-  - path: reports/metrics.txt
-    md5: d41d8cd98f00b204e9800998ecf8427e
 process_data:
   cmd: python src/data/make_dataset.py
   deps:
