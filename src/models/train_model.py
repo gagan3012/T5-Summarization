@@ -33,6 +33,8 @@ def train_model():
     with open('wandb/latest-run/files/wandb-summary.json') as json_file:
         data = json.load(json_file)
 
+        json.dump(data, fp)
+
 
 if __name__ == '__main__':
     train_model()
