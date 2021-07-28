@@ -50,3 +50,10 @@ stages:
       md5: d751713988987e9331980363e24189ce.dir
       size: 0
       nfiles: 0
+    - path: params.yml
+      md5: d0f3e81bc9191e752a69761045a449d9
+      size: 196
+    - path: src/data/process_data.py
+      md5: ba3ba7b7c8a905b736b6b0a28d2334c4
+      size: 623
+    outs:
