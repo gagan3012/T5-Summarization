@@ -327,7 +327,6 @@ class Summarization:
             learning_rate=learning_rate, adam_epsilon=adam_epsilon, weight_decay=weight_decay
         )
 
-        MLlogger = MLFlowLogger(experiment_name="Summarization",
                                 tracking_uri="https://dagshub.com/gagan3012/summarization.mlflow")
 
         logger = DAGsHubLogger(metrics_path='reports/metrics.txt')
