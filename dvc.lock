@@ -62,6 +62,7 @@ stages:
       size: 986944
     - path: data/processed/train.csv
       md5: 51edd724b75a8e99a78b9138f8f37c60
+      size: 25012573
     - path: data/processed/validation.csv
       md5: 0900e2bb330df94cb045faddd0b945d1
       size: 1138285
