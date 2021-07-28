@@ -1,4 +1,4 @@
-  outs:
+schema: '2.0'
 stages:
   train:
     cmd: python src/models/train_model.py
