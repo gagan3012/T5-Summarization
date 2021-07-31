@@ -17,7 +17,7 @@ def predict_model(text):
     return pre_summary
 
 
-if __name__ == '__main__':
-    text = pd.load_csv('data/processed/test.csv')['input_text'][0]
+if __name__ == "__main__":
+    text = pd.load_csv("data/processed/test.csv")["input_text"][0]
     pre_summary = predict_model(text)
     print(pre_summary)
