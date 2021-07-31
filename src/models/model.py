@@ -398,6 +398,7 @@ class Summarization:
 
     def save_model(
             self,
+            model_dir="models"
     ):
         """
         Save model to dir
