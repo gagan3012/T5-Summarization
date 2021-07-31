@@ -20,6 +20,5 @@ if __name__ == "__main__":
     with open("params.yml") as f:
         params = yaml.safe_load(f)
     pprint.pprint(params)
-    make_dataset(dataset=params['data'], split='train')
     make_dataset(dataset=params['data'], split='test')
     make_dataset(dataset=params['data'], split='validation')
