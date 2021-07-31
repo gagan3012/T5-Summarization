@@ -22,6 +22,7 @@ def train_model():
 
     model = Summarization()
     model.from_pretrained(
+        model_type=params["model_type"], model_name=params["model_name"]
 
                 batch_size=params['batch_size'], max_epochs=params['epochs'],
                 use_gpu=params['use_gpu'], learning_rate=float(params['learning_rate']),
