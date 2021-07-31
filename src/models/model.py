@@ -160,7 +160,7 @@ class PLDataModule(LightningDataModule):
 
 
 class LightningModel(LightningModule):
-    """ PyTorch Lightning Model class"""
+    """PyTorch Lightning Model class"""
 
     def __init__(
         self,
@@ -187,7 +187,7 @@ class LightningModel(LightningModule):
         self.weight_decay = weight_decay
 
     def forward(self, input_ids, attention_mask, decoder_attention_mask, labels=None):
-        """ forward step """
+        """forward step"""
         output = self.model(
             input_ids,
             attention_mask=attention_mask,
@@ -198,7 +198,7 @@ class LightningModel(LightningModule):
         return output.loss, output.logits
 
     def training_step(self, batch, batch_size):
-        """ training step """
+        """training step"""
         input_ids = batch["keywords_input_ids"]
         attention_mask = batch["keywords_attention_mask"]
         labels = batch["labels"]
@@ -214,7 +214,7 @@ class LightningModel(LightningModule):
         return loss
 
     def validation_step(self, batch, batch_size):
-        """ validation step """
+        """validation step"""
         input_ids = batch["keywords_input_ids"]
         attention_mask = batch["keywords_attention_mask"]
         labels = batch["labels"]
@@ -230,7 +230,7 @@ class LightningModel(LightningModule):
         return loss
 
     def test_step(self, batch, batch_size):
-        """ test step """
+        """test step"""
         input_ids = batch["keywords_input_ids"]
         attention_mask = batch["keywords_attention_mask"]
         labels = batch["labels"]
@@ -247,7 +247,7 @@ class LightningModel(LightningModule):
         return loss
 
     def configure_optimizers(self):
-        """ configure optimizers """
+        """configure optimizers"""
         model = self.model
         no_decay = ["bias", "LayerNorm.weight"]
         optimizer_grouped_parameters = [
