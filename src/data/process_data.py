@@ -3,7 +3,7 @@ import yaml
 import os
 
 
-def process_data(split='train'):
+def process_data(split="train"):
 
     with open("params.yml") as f:
         params = yaml.safe_load(f)
