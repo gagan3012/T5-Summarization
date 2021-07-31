@@ -12,7 +12,6 @@ def make_dataset(dataset="cnn_dailymail", split="train"):
     dataset = load_dataset(dataset, "3.0.0", split=split)
     df = pd.DataFrame()
     df['highlights'] = dataset['highlights']
-    df.to_csv('data/raw/{}.csv'.format(split))
 
 
 if __name__ == '__main__':
