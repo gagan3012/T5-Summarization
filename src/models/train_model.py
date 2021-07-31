@@ -25,7 +25,6 @@ def train_model():
         model_type=params["model_type"], model_name=params["model_name"]
     )
 
-                num_workers=int(params['num_workers']))
 
     model.save_model(model_dir=params['model_dir'])
 
