@@ -459,7 +459,6 @@ class Summarization:
             num_return_sequences=num_return_sequences,
         )
         preds = self.tokenizer.decode(
-                clean_up_tokenization_spaces=clean_up_tokenization_spaces,
             )
         return preds
 
