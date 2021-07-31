@@ -41,7 +41,7 @@ def train_model():
         model_type=params["model_type"], model_name=params["model_name"]
         data = json.load(json_file)
 
-    with open('reports/training_metrics.txt', 'w') as fp:
+    with open("reports/training_metrics.txt", "w") as fp:
         json.dump(data, fp)
 
 
