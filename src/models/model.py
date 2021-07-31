@@ -3,6 +3,7 @@ import pandas as pd
 from transformers import (
     AdamW,
     T5ForConditionalGeneration,
+    T5TokenizerFast as T5Tokenizer,
 )
 from torch.utils.data import Dataset, DataLoader
 import pytorch_lightning as pl
