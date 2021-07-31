@@ -433,19 +433,19 @@ class Summarization:
         self.model.save_pretrained(path)
 
     def predict(
-            self,
-            source_text: str,
-            max_length: int = 512,
-            num_return_sequences: int = 1,
-            num_beams: int = 2,
-            top_k: int = 50,
-            top_p: float = 0.95,
-            do_sample: bool = True,
-            repetition_penalty: float = 2.5,
-            length_penalty: float = 1.0,
-            early_stopping: bool = True,
-            skip_special_tokens: bool = True,
-            clean_up_tokenization_spaces: bool = True,
+        self,
+        source_text: str,
+        max_length: int = 512,
+        num_return_sequences: int = 1,
+        num_beams: int = 2,
+        top_k: int = 50,
+        top_p: float = 0.95,
+        do_sample: bool = True,
+        repetition_penalty: float = 2.5,
+        length_penalty: float = 1.0,
+        early_stopping: bool = True,
+        skip_special_tokens: bool = True,
+        clean_up_tokenization_spaces: bool = True,
     ):
         """
         generates prediction for T5/MT5 model
