@@ -162,7 +162,15 @@ class PLDataModule(LightningDataModule):
 class LightningModel(LightningModule):
     """ PyTorch Lightning Model class"""
 
-    def __init__(self, tokenizer, model, learning_rate, adam_epsilon, weight_decay, output: str = "outputs"):
+    def __init__(
+        self,
+        tokenizer,
+        model,
+        learning_rate,
+        adam_epsilon,
+        weight_decay,
+        output: str = "outputs",
+    ):
         """
         initiates a PyTorch Lightning Model
         Args:
