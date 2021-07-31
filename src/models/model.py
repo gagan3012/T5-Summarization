@@ -6,6 +6,7 @@ from transformers import (
     T5TokenizerFast as T5Tokenizer,
     MT5Tokenizer,
     MT5ForConditionalGeneration,
+    ByT5Tokenizer,
 )
 from torch.utils.data import Dataset, DataLoader
 import pytorch_lightning as pl
