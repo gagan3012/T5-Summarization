@@ -45,5 +45,5 @@ def train_model():
         json.dump(data, fp)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     train_model()
