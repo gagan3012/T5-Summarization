@@ -422,10 +422,7 @@ class Summarization:
 
         self.model = self.model.to(self.device)
 
-    def save_model(
-            self,
-            model_dir="models"
-    ):
+    def save_model(self, model_dir="models"):
         """
         Save model to dir
         :param model_dir:
