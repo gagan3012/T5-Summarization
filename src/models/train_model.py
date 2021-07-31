@@ -25,6 +25,10 @@ def train_model():
         model_type=params["model_type"], model_name=params["model_name"]
     )
 
+    model.train(
+        train_df=train_df,
+        eval_df=eval_df,
+        batch_size=params["batch_size"],
 
     model.save_model(model_dir=params['model_dir'])
 
