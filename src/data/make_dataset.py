@@ -16,7 +16,6 @@ def make_dataset(dataset="cnn_dailymail", split="train"):
     df.to_csv("data/raw/{}.csv".format(split))
 
 
-if __name__ == '__main__':
     with open("params.yml") as f:
         params = yaml.safe_load(f)
     pprint.pprint(params)
