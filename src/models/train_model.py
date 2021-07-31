@@ -21,6 +21,7 @@ def train_model():
     eval_df = eval_df.sample(frac=params["split"], replace=True, random_state=1)
 
     model = Summarization()
+    model.from_pretrained(
 
                 batch_size=params['batch_size'], max_epochs=params['epochs'],
                 use_gpu=params['use_gpu'], learning_rate=float(params['learning_rate']),
