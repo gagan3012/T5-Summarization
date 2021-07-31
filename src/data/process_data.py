@@ -16,5 +16,3 @@ def process_data(split="train"):
     df.to_csv("data/processed/{}.csv".format(split))
 
 
-    process_data(split='test')
-    process_data(split='validation')
