@@ -22,3 +22,4 @@ if __name__ == "__main__":
     pprint.pprint(params)
     make_dataset(dataset=params['data'], split='test')
     make_dataset(dataset=params['data'], split='validation')
+    make_dataset(dataset=params["data"], split="train")
