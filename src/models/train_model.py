@@ -35,7 +35,7 @@ def train_model():
         num_workers=int(params["num_workers"]),
     )
 
-    model.save_model(model_dir=params['model_dir'])
+    model.save_model(model_dir=params["model_dir"])
 
     with open('wandb/latest-run/files/wandb-summary.json') as json_file:
         model_type=params["model_type"], model_name=params["model_name"]
