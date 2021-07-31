@@ -15,6 +15,7 @@ def train_model():
 
     # Load the data
     train_df = pd.read_csv("data/processed/train.csv")
+    eval_df = pd.read_csv("data/processed/validation.csv")
 
     train_df = train_df.sample(frac=params['split'], replace=True, random_state=1)
     eval_df = eval_df.sample(frac=params['split'], replace=True, random_state=1)
