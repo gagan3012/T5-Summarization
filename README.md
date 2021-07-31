@@ -57,5 +57,4 @@ Project Organization
     ├── tox.ini            <- tox file with settings for running tox; see tox.testrun.org
     └── data.dvc          <- Traing a model on the processed data.
 
-
 --------
