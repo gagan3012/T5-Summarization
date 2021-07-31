@@ -459,7 +459,6 @@ class Summarization:
             num_return_sequences=num_return_sequences,
         )
         preds = self.tokenizer.decode(
-            )
         return preds
 
     def evaluate(
