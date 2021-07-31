@@ -533,5 +533,17 @@ class Summarization:
             "Rouge_L Mid Precision": results["rougeL"].mid.precision,
             "Rouge_L Mid recall": results["rougeL"].mid.recall,
             "Rouge_L Mid F1": results["rougeL"].mid.fmeasure,
+            "Rouge_L High Precision": results["rougeL"].high.precision,
+            "Rouge_L High recall": results["rougeL"].high.recall,
+            "Rouge_L High F1": results["rougeL"].high.fmeasure,
+            "rougeLsum Low Precision": results["rougeLsum"].low.precision,
+            "rougeLsum Low recall": results["rougeLsum"].low.recall,
+            "rougeLsum Low F1": results["rougeLsum"].low.fmeasure,
+            "rougeLsum Mid Precision": results["rougeLsum"].mid.precision,
+            "rougeLsum Mid recall": results["rougeLsum"].mid.recall,
+            "rougeLsum Mid F1": results["rougeLsum"].mid.fmeasure,
+            "rougeLsum High Precision": results["rougeLsum"].high.precision,
+            "rougeLsum High recall": results["rougeLsum"].high.recall,
+            "rougeLsum High F1": results["rougeLsum"].high.fmeasure,
         }
         return output
