@@ -488,11 +488,7 @@ class Summarization:
         )
         return preds
 
-    def evaluate(
-            self,
-            test_df: pd.DataFrame,
-            metrics: str = "rouge"
-    ):
+    def evaluate(self, test_df: pd.DataFrame, metrics: str = "rouge"):
         metric = load_metric(metrics)
         input_text = test_df['input_text']
         references = test_df['output_text']
