@@ -351,6 +351,7 @@ class Summarization:
         gpus = -1 if use_gpu and torch.cuda.is_available() else 0
 
         trainer = Trainer(
+            logger=[WandLogger, MLlogger],
             callbacks=early_stop_callback,
             max_epochs=max_epochs,
             gpus=gpus,
