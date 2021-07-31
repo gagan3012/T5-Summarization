@@ -509,10 +509,6 @@ class Summarization:
         results = metric.compute(predictions=predictions, references=references)
 
         output = {
-            },
-            "Rouge L": {
-                "Rouge_L Low Precision": results["rougeL"].low.precision,
-                "Rouge_L Low recall": results["rougeL"].low.recall,
                 "Rouge_L Low F1": results["rougeL"].low.fmeasure,
                 "Rouge_L Mid Precision": results["rougeL"].mid.precision,
                 "Rouge_L Mid recall": results["rougeL"].mid.recall,
