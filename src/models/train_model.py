@@ -25,7 +25,6 @@ def train_model():
         model_type=params["model_type"], model_name=params["model_name"]
     )
 
-                use_gpu=params['use_gpu'], learning_rate=float(params['learning_rate']),
                 num_workers=int(params['num_workers']))
 
     model.save_model(model_dir=params['model_dir'])
