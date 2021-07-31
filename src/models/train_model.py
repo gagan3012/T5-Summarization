@@ -37,7 +37,7 @@ def train_model():
 
     model.save_model(model_dir=params["model_dir"])
 
-    with open('wandb/latest-run/files/wandb-summary.json') as json_file:
+    with open("wandb/latest-run/files/wandb-summary.json") as json_file:
         data = json.load(json_file)
 
     with open("reports/training_metrics.txt", "w") as fp:
