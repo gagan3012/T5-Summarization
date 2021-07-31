@@ -16,3 +16,5 @@ def process_data(split="train"):
     df.to_csv("data/processed/{}.csv".format(split))
 
 
+if __name__ == "__main__":
+    process_data(split="train")
