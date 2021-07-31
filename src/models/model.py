@@ -341,8 +341,12 @@ class Summarization:
         )
 
         self.T5Model = LightningModel(
-            tokenizer=self.tokenizer, model=self.model, output=outputdir,
-            learning_rate=learning_rate, adam_epsilon=adam_epsilon, weight_decay=weight_decay
+            tokenizer=self.tokenizer,
+            model=self.model,
+            output=outputdir,
+            learning_rate=learning_rate,
+            adam_epsilon=adam_epsilon,
+            weight_decay=weight_decay,
         )
 
         MLlogger = MLFlowLogger(experiment_name="Summarization",
