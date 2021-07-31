@@ -460,6 +460,7 @@ class Summarization:
         )
         preds = self.tokenizer.decode(
             generated_ids[0],
+            skip_special_tokens=skip_special_tokens,
         return preds
 
     def evaluate(
