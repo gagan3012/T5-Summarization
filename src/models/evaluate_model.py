@@ -16,6 +16,7 @@ def evaluate_model():
     test_df = pd.read_csv("data/processed/test.csv")[:25]
     model = Summarization()
     results = model.evaluate(test_df=test_df, metrics=params['metric'])
+    model.load_model(model_type=params["model_type"], model_dir=params["model_dir"])
 
     with open('reports/metrics.txt', 'w') as fp:
         json.dump(results, fp)
