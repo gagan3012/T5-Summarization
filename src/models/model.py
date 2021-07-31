@@ -459,6 +459,7 @@ class Summarization:
             num_return_sequences=num_return_sequences,
         )
         preds = self.tokenizer.decode(
+            generated_ids[0],
         return preds
 
     def evaluate(
