@@ -45,4 +45,5 @@ stages:
       - src/visualization/visualize.py
       - params.yml
     metrics:
+      - reports/visualization_metrics.txt:
 
