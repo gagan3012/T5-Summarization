@@ -552,3 +552,5 @@ class Summarization:
             "rougeLsum High F1": results["rougeLsum"].high.fmeasure,
         }
         return output
+
+    def upload(self, hf_username, model_name):
