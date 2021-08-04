@@ -557,3 +557,6 @@ class Summarization:
         hf_password = getpass("Enter your HuggingFace password")
         if Path("./models").exists():
             shutil.rmtree("./models")
+        token = HfApi().login(username=hf_username, password=hf_password)
+        del hf_password
+        model_url = HfApi().create_repo(token=token, name=model_name, exist_ok=True)
