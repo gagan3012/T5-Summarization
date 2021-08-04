@@ -23,3 +23,6 @@ def visualize():
             file1.writelines(sumtext)
 
 
+if __name__ == "__main__":
+    with open("params.yml") as f:
+        params = yaml.safe_load(f)
