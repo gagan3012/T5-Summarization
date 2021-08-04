@@ -39,4 +39,5 @@ stages:
       - reports/evaluation_metrics.txt:
           cache: false
   visualize:
+    cmd: streamlit run src/visualization/visualize.py
 
