@@ -8,4 +8,3 @@ epochs: 5
 source_dir: src
 model_dir: models
 metric: rouge
-use_gpu: True
