@@ -571,3 +571,6 @@ class Summarization:
         readme_txt = f"""
             ---
             Summarisation model {model_name}
+            """.strip()
+
+        (Path(model_repo.local_dir) / "README.md").write_text(readme_txt)
