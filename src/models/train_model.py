@@ -44,6 +44,7 @@ def train_model():
         json.dump(data, fp)
 
     if params["upload_to_hf"]:
+        model.upload(hf_username=params["hf_username"], model_name=params["name"])
 
 if __name__ == "__main__":
     train_model()
