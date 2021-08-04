@@ -43,6 +43,7 @@ def train_model():
     with open("reports/training_metrics.txt", "w") as fp:
         json.dump(data, fp)
 
+    if params["upload_to_hf"]:
 
 if __name__ == "__main__":
     train_model()
