@@ -14,3 +14,5 @@ def visualize():
 
     text = st.text_area("Enter text here")
     if st.button("Generate Summary"):
+        with st.spinner("Connecting the Dots..."):
+            sumtext = predict_model(text=text)
