@@ -28,5 +28,5 @@ if __name__ == "__main__":
     with open("params.yml") as f:
         params = yaml.safe_load(f)
 
-    if params['visualise']:
+    if params["visualise"]:
         visualize()
