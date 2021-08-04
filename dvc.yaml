@@ -36,6 +36,5 @@ stages:
       - models
       - src/models/evaluate_model.py
     metrics:
-      - reports/metrics.txt:
           cache: false
 
