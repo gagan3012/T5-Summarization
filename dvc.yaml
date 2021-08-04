@@ -46,4 +46,5 @@ stages:
       - params.yml
     metrics:
       - reports/visualization_metrics.txt:
+          cache: false
 
