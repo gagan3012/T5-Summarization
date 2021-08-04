@@ -554,3 +554,6 @@ class Summarization:
         return output
 
     def upload(self, hf_username, model_name):
+        hf_password = getpass("Enter your HuggingFace password")
+        if Path("./models").exists():
+            shutil.rmtree("./models")
