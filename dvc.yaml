@@ -40,4 +40,5 @@ stages:
           cache: false
   visualize:
     cmd: streamlit run src/visualization/visualize.py
+    deps:
 
