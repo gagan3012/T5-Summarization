@@ -1,4 +1,3 @@
-from src.models.train_model import train_model
 from src.models.model import Summarization
 from src.data.make_dataset import make_dataset
 from src.data.process_data import process_data
