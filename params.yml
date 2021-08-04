@@ -10,4 +10,3 @@ model_dir: models
 metric: rouge
 split: 0.001
 use_gpu: True
-visualise: True
