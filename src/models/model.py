@@ -4,6 +4,7 @@ from pathlib import Path
 
 import torch
 import pandas as pd
+from huggingface_hub import HfApi, Repository
 from transformers import (
     AdamW,
     T5ForConditionalGeneration,
