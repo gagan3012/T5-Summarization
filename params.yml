@@ -1,3 +1,4 @@
+name: summarsiation
 data: cnn_dailymail
 batch_size: 2
 num_workers: 2
