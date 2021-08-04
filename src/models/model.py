@@ -568,3 +568,6 @@ class Summarization:
             git_user=hf_username,
         )
 
+        readme_txt = f"""
+            ---
+            Summarisation model {model_name}
