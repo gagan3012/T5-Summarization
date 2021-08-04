@@ -5,7 +5,7 @@ from models import predict_model
 
 
 def visualize():
-    st.write('# Summarization  UI')
+    st.write("# Summarization  UI")
     st.markdown(
         '''
         *For additional questions and inquiries, please contact **Gagan Bhatia** via [LinkedIn](
