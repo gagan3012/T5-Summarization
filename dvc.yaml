@@ -41,4 +41,5 @@ stages:
   visualize:
     cmd: streamlit run src/visualization/visualize.py
     deps:
+      - models
 
