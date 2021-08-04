@@ -13,3 +13,4 @@ split: 0.001
 use_gpu: True
 visualise: True
 hf_username: gagan3012
+upload_to_hf: True
