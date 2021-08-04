@@ -38,4 +38,5 @@ stages:
     metrics:
       - reports/evaluation_metrics.txt:
           cache: false
+  visualize:
 
