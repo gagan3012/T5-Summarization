@@ -1,7 +1,6 @@
 import streamlit as st
 import yaml
 
-from src.models import predict_model
 
 
 def visualize():
