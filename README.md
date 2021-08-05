@@ -1,3 +1,13 @@
+---
+title: {{T5-Summarisation}}
+emoji: {{✌}}
+colorFrom: {{yellow}}
+colorTo: {{red}}
+sdk: {{sdk}}
+app_file: src/visualization/visualize.py
+pinned: false
+---
+
 summarization
 ==============================
 
@@ -56,5 +66,6 @@ Project Organization
     │
     ├── tox.ini            <- tox file with settings for running tox; see tox.testrun.org
     └── data.dvc          <- Traing a model on the processed data.
+
 
 --------
