@@ -3,7 +3,7 @@ title: {{T5-Summarisation}}
 emoji: {{✌}}
 colorFrom: {{yellow}}
 colorTo: {{red}}
-sdk: {{sdk}}
+sdk: streamlit
 app_file: src/visualization/visualize.py
 pinned: false
 ---
