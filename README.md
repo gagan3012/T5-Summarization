@@ -1,8 +1,8 @@
 ---
-title: {{T5-Summarisation}}
-emoji: {{✌}}
-colorFrom: {{yellow}}
-colorTo: {{red}}
+title: T5-Summarisation
+emoji: ✌
+colorFrom: yellow
+colorTo: red
 sdk: streamlit
 app_file: src/visualization/visualize.py
 pinned: false
