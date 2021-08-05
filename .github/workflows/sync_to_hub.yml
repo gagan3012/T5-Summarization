@@ -17,4 +17,4 @@ jobs:
       - name: Push to hub
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
-        run: git push --force https://gagan3012:$HF_TOKEN@huggingface.co/spaces/gagan3012/t5-summarisation main
+        run: git push --force https://gagan3012:$HF_TOKEN@huggingface.co/spaces/gagan3012/t5-summarisation
