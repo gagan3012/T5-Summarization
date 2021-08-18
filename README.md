@@ -4,7 +4,7 @@ emoji: 💯
 colorFrom: yellow
 colorTo: red
 sdk: streamlit
-app_file: src/visualization/visualize.py
+app_file: app.py
 pinned: false
 ---
 
@@ -16,7 +16,7 @@ pinned: false
 [![Downloads](https://static.pepy.tech/personalized-badge/t5s?period=total&units=none&left_color=grey&right_color=orange&left_text=Pip%20Downloads)](https://pepy.tech/project/t5s)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://huggingface.co/spaces/gagan3012/summarization)
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/gagan3012/summarization/blob/master/notebooks/t5s.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/gagan3012/summarization/blob/master/notebooks/t5s-new.ipynb)
 [![DAGSHub](https://img.shields.io/badge/%F0%9F%90%B6-Pipeline%20on%20DAGsHub-green)](https://dagshub.com/gagan3012/summarization)
 
 T5 Summarisation Using Pytorch Lightning, DVC, DagsHub and HuggingFace Spaces
@@ -50,6 +50,13 @@ We would then have to create the required directories to run the pipeline
 t5s dirs
 ``` 
 
+Now to define the parameters for the run we have to run:
+```
+t5s start [-h] [-d DATASET] [-s SPLIT] [-n NAME] [-mt MODEL_TYPE]
+                 [-m MODEL_NAME] [-e EPOCHS] [-lr LEARNING_RATE]
+                 [-b BATCH_SIZE]
+```
+
 Then we need to pull the models from DVC
 
 ```
@@ -60,6 +67,17 @@ Now to run the training pipeline we can run:
 
 ```
 t5s run
+```
+
+Before pushing make sure that the DVC remote is setup correctly:
+
+```
+
+dvc remote modify origin url https://dagshub.com/{user_name}/summarization.dvc
+dvc remote modify origin --local auth basic
+dvc remote modify origin --local user {user_name}
+dvc remote modify origin --local password {your_token}
+
 ```
 
 Finally to push the model to DVC
