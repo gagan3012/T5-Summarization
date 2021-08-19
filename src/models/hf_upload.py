@@ -27,3 +27,4 @@ def upload(model_to_upload, model_name):
         readme_txt = None
 
     (Path(model_repo.local_dir) / "README.md").write_text(readme_txt)
+    model_to_upload.save_model(Path(model_repo.local_dir))
