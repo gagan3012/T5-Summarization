@@ -365,7 +365,6 @@ class Summarization:
             tracking_uri="https://dagshub.com/gagan3012/summarization.mlflow",
         )
 
-
         early_stop_callback = (
             [
                 EarlyStopping(
