@@ -17,7 +17,6 @@ def visualize():
             sumtext = predict_model(text=text)
         st.write("# Generated Summary:")
         st.write("{}".format(sumtext))
-        with open("reports/visualization_metrics.txt", "w") as file1:
             file1.writelines(text)
             file1.writelines(sumtext)
 
