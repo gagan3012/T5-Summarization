@@ -9,6 +9,7 @@ stages:
   process_data:
     cmd: python src/data/process_data.py
     deps:
+      - data_params.yml
       - data/raw
       - src/data/process_data.py
     outs:
