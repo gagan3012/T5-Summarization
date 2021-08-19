@@ -38,8 +38,5 @@ def train_model():
     model.save_model(model_dir=params["model_dir"])
 
 
-        model.upload(hf_username=params["hf_username"], model_name=params["name"])
-
-
 if __name__ == "__main__":
     train_model()
