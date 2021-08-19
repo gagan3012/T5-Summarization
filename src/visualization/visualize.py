@@ -17,7 +17,6 @@ def visualize():
             sumtext = predict_model(text=text)
         st.write("# Generated Summary:")
         st.write("{}".format(sumtext))
-            file1.writelines(sumtext)
 
 
 if __name__ == "__main__":
