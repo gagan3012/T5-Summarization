@@ -23,6 +23,8 @@ def train_model():
         model_type=params["model_type"], model_name=params["model_name"]
     )
 
+    print(train_df.shape, eval_df.shape)
+
     model.train(
         train_df=train_df,
         eval_df=eval_df,
