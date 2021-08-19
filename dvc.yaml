@@ -52,4 +52,6 @@ stages:
       - src/visualization/visualize.py
   push_to_hf_hub:
     cmd: python src/models/hf_upload.py
+    deps:
+      - model_params.yml
 
