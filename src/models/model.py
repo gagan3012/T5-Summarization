@@ -547,9 +547,6 @@ class Summarization:
         }
         return output
 
-        if Path("./models").exists():
-            shutil.rmtree("./models")
-        token = HfApi().login(username=hf_username, password=hf_password)
         del hf_password
         model_url = HfApi().create_repo(token=token, name=model_name, exist_ok=True)
         model_repo = Repository(
