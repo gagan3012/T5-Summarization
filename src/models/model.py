@@ -389,6 +389,7 @@ class Summarization:
         )
 
         trainer.fit(self.T5Model, self.data_module)
+
         with mlflow.start_run() as run:  # noqa: F841
             trainer.fit(self.T5Model, self.data_module)
 
