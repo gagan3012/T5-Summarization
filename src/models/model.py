@@ -547,10 +547,6 @@ class Summarization:
         }
         return output
 
-            git_user=hf_username,
-        )
-
-        readme_txt = f"""
             ---
             Summarisation model {model_name}
             """.strip()
