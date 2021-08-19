@@ -10,3 +10,5 @@ def process_data(frac=0.1, split="train"):
 
 
 if __name__ == "__main__":
+    with open("data_params.yml") as f:
+        params = yaml.safe_load(f)
