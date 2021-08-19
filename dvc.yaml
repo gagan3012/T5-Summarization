@@ -50,6 +50,5 @@ stages:
     deps:
       - models
       - src/visualization/visualize.py
-      - reports/visualization_metrics.txt:
           cache: false
 
