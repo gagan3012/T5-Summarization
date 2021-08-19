@@ -2,7 +2,6 @@ import yaml
 
 from model import Summarization
 import pandas as pd
-import json
 
 
 def evaluate_model():
