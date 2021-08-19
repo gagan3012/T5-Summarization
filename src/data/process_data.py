@@ -12,4 +12,3 @@ def process_data(frac=0.1, split="train"):
 if __name__ == "__main__":
     process_data(split="train")
     process_data(split="test")
-    process_data(split="validation")
