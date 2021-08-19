@@ -17,6 +17,7 @@ def evaluate_model():
     model.load_model(model_type=params["model_type"], model_dir=params["model_dir"])
     results = model.evaluate(test_df=test_df, metrics=params["metric"])
 
+    with dagshub_logger(
 
 
 if __name__ == "__main__":
