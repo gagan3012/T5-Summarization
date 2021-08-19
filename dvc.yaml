@@ -38,6 +38,7 @@ stages:
   eval:
     cmd: python src/models/evaluate_model.py
     deps:
+      - model_params.yml
       - data/processed/test.csv
       - models
       - src/models/evaluate_model.py
