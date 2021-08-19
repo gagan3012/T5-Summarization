@@ -360,8 +360,8 @@ class Summarization:
             weight_decay=weight_decay,
         )
 
-        MLlogger = MLFlowLogger(
-            experiment_name="Summarization",
+        logger = DAGsHubLogger(
+            metrics_path="reports/training_metrics.csv", should_log_hparams=False
         )
 
         early_stop_callback = (
