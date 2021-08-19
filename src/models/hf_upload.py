@@ -36,3 +36,5 @@ def upload(model_to_upload, model_name):
 
     if Path("./hf_model").exists():
         shutil.rmtree("./hf_model")
+
+
