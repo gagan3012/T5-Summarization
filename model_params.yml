@@ -5,3 +5,5 @@ metric: rouge
 model_dir: models
 model_name: t5-base
 model_type: t5
+name: summarsiation
+num_workers: 2
