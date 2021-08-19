@@ -43,7 +43,7 @@ stages:
       - models
       - src/models/evaluate_model.py
     metrics:
-      - reports/evaluation_metrics.txt:
+      - reports/evaluation_metrics.csv:
           cache: false
   visualize:
     cmd: streamlit run src/visualization/visualize.py
