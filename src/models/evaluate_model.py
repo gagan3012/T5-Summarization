@@ -18,6 +18,8 @@ def evaluate_model():
     results = model.evaluate(test_df=test_df, metrics=params["metric"])
 
     with dagshub_logger(
+        metrics_path="reports/evaluation_metrics.csv", should_log_hparams=False
+    ) as logger:
 
 
 if __name__ == "__main__":
