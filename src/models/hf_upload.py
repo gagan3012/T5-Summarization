@@ -44,3 +44,5 @@ if __name__ == "__main__":
 
     model = Summarization()
     model.load_model(model_dir="./models")
+
+    upload(model_to_upload=model, model_name=params["name"])
