@@ -5,6 +5,7 @@ stages:
       - data_params.yml
       - src/data/make_dataset.py
     outs:
+      - data/raw
   process_data:
     cmd: python src/data/process_data.py
     deps:
