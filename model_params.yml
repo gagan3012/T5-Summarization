@@ -1,1 +1,3 @@
 batch_size: 2
+epochs: 5
+learning_rate: 0.0001
