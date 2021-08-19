@@ -365,7 +365,6 @@ class Summarization:
             tracking_uri="https://dagshub.com/gagan3012/summarization.mlflow",
         )
 
-        WandLogger = WandbLogger(project="summarization-dagshub")
 
         # logger = DAGsHubLogger(metrics_path='reports/training_metrics.txt')
 
