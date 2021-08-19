@@ -1,3 +1,4 @@
+from dagshub import dagshub_logger
 import yaml
 
 from model import Summarization
