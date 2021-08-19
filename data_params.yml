@@ -1,1 +1,2 @@
 data: cnn_dailymail
+split: 0.001
