@@ -549,4 +549,3 @@ class Summarization:
 
         print("Check out your model at:")
         print(commit_url)
-        print(f"https://huggingface.co/{hf_username}/{model_name}")
