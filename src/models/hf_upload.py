@@ -5,3 +5,6 @@ from pathlib import Path
 import yaml
 
 from model import Summarization
+from huggingface_hub import HfApi, Repository
+
+
