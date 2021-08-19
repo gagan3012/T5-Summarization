@@ -20,6 +20,7 @@ def evaluate_model():
     with dagshub_logger(
         metrics_path="reports/evaluation_metrics.csv", should_log_hparams=False
     ) as logger:
+        logger.log_metrics(results)
 
 
 if __name__ == "__main__":
