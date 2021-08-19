@@ -269,6 +269,7 @@ class LightningModel(LightningModule):
         ]
         optimizer = AdamW(
             optimizer_grouped_parameters, lr=self.learning_rate, eps=self.adam_epsilon
+            eps=self.adam_epsilon,
         )
         self.opt = optimizer
         return [optimizer]
