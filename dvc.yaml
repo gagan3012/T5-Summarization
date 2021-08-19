@@ -33,6 +33,7 @@ stages:
       - models:
           persist: true
     metrics:
+      - reports/training_metrics.csv:
           cache: false
   eval:
     cmd: python src/models/evaluate_model.py
