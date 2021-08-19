@@ -8,7 +8,7 @@ def train_model():
     """
     Train the model
     """
-    with open("params.yml") as f:
+    with open("model_params.yml") as f:
         params = yaml.safe_load(f)
 
     # Load the data
