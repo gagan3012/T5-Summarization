@@ -38,3 +38,6 @@ def upload(model_to_upload, model_name):
         shutil.rmtree("./hf_model")
 
 
+if __name__ == "__main__":
+    with open("model_params.yml") as f:
+        params = yaml.safe_load(f)
