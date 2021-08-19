@@ -34,3 +34,5 @@ def upload(model_to_upload, model_name):
     print(commit_url)
     print(f"https://huggingface.co/{hf_username}/{model_name}")
 
+    if Path("./hf_model").exists():
+        shutil.rmtree("./hf_model")
