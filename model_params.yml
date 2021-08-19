@@ -7,3 +7,5 @@ model_name: t5-base
 model_type: t5
 name: summarsiation
 num_workers: 2
+source_dir: src
+use_gpu: true
