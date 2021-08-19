@@ -54,4 +54,6 @@ stages:
     cmd: python src/models/hf_upload.py
     deps:
       - model_params.yml
+      - src/models/hf_upload.py
+      - models
 
