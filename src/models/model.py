@@ -548,4 +548,3 @@ class Summarization:
         return output
 
         print("Check out your model at:")
-        print(commit_url)
