@@ -388,7 +388,7 @@ class Summarization:
             progress_bar_refresh_rate=5,
         )
 
-        trainer.fit(self.T5Model, self.data_module)
+        mlflow.pytorch.autolog(log_models=False)
 
         with mlflow.start_run() as run:  # noqa: F841
             trainer.fit(self.T5Model, self.data_module)
