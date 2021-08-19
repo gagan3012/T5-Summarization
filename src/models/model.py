@@ -546,9 +546,6 @@ class Summarization:
             "rougeLsum High F1": results["rougeLsum"].high.fmeasure,
         }
         return output
-        (Path(model_repo.local_dir) / "README.md").write_text(readme_txt)
-        self.save_model()
-        commit_url = model_repo.push_to_hub()
 
         print("Check out your model at:")
         print(commit_url)
