@@ -366,7 +366,6 @@ class Summarization:
         )
 
 
-
         early_stop_callback = (
             [
                 EarlyStopping(
