@@ -3,6 +3,7 @@ stages:
     cmd: python src/data/make_dataset.py
     deps:
       - data_params.yml
+      - src/data/make_dataset.py
   process_data:
     cmd: python src/data/process_data.py
     deps:
