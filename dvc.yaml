@@ -1,4 +1,5 @@
 stages:
+  download_data:
   process_data:
     cmd: python src/data/process_data.py
     deps:
