@@ -24,3 +24,6 @@ def upload(model_to_upload, model_name):
     try:
         readme_txt = open(join(dirname(__file__), "README.md"), encoding="utf8").read()
     except Exception:
+        readme_txt = None
+
+    (Path(model_repo.local_dir) / "README.md").write_text(readme_txt)
