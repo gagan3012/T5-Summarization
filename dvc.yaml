@@ -50,5 +50,4 @@ stages:
     deps:
       - models
       - src/visualization/visualize.py
-          cache: false
 
