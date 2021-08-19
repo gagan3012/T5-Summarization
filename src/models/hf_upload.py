@@ -41,3 +41,6 @@ def upload(model_to_upload, model_name):
 if __name__ == "__main__":
     with open("model_params.yml") as f:
         params = yaml.safe_load(f)
+
+    model = Summarization()
+    model.load_model(model_dir="./models")
