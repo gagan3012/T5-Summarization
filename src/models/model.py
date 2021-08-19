@@ -389,6 +389,7 @@ class Summarization:
         )
 
         trainer.fit(self.T5Model, self.data_module)
+            trainer.fit(self.T5Model, self.data_module)
 
     def load_model(
         self, model_type: str = "t5", model_dir: str = "models", use_gpu: bool = False
