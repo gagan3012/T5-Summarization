@@ -1,7 +1,6 @@
 import yaml
 
-from src.models.model import Summarization
-import pandas as pd
+from .model import Summarization
 
 
 def predict_model(text):
