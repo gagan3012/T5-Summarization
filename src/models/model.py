@@ -546,5 +546,3 @@ class Summarization:
             "rougeLsum High F1": results["rougeLsum"].high.fmeasure,
         }
         return output
-
-        print("Check out your model at:")
