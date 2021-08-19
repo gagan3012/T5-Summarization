@@ -8,7 +8,7 @@ def evaluate_model():
     """
     Evaluate model using rouge measure
     """
-    with open("params.yml") as f:
+    with open("model_params.yml") as f:
         params = yaml.safe_load(f)
 
     test_df = pd.read_csv("data/processed/test.csv")[:25]
