@@ -546,7 +546,6 @@ class Summarization:
             "rougeLsum High F1": results["rougeLsum"].high.fmeasure,
         }
         return output
-
             ---
             Summarisation model {model_name}
             """.strip()
