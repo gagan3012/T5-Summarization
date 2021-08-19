@@ -15,3 +15,7 @@ def upload(model_to_upload, model_name):
     model_repo = Repository(
         "./hf_model",
         clone_from=model_url,
+        use_auth_token=hf_token,
+        git_email=f"{hf_username}@users.noreply.huggingface.co",
+        git_user=hf_username,
+    )
