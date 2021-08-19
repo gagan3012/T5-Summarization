@@ -19,3 +19,6 @@ def upload(model_to_upload, model_name):
         git_email=f"{hf_username}@users.noreply.huggingface.co",
         git_user=hf_username,
     )
+
+    del hf_token
+    try:
