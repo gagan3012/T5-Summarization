@@ -21,7 +21,6 @@ stages:
   train:
     cmd: python src/models/train_model.py
     deps:
-      - params.yml
       - data/processed/train.csv
       - data/processed/validation.csv
       - src/models/train_model.py
