@@ -14,9 +14,6 @@ def predict_model(text: str):
     model.load_model(model_type=params["model_type"], model_dir=params["model_dir"])
     pre_summary = model.predict(text)
     return pre_summary
-
-
-if __name__ == "__main__":
     text = pd.load_csv("data/processed/test.csv")["input_text"][0]
     pre_summary = predict_model(text)
     print(pre_summary)
