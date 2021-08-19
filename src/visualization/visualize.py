@@ -20,4 +20,4 @@ def visualize():
 
 
 if __name__ == "__main__":
-    with open("params.yml") as f:
+    visualize()
