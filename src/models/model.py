@@ -366,7 +366,6 @@ class Summarization:
         )
 
 
-        # logger = DAGsHubLogger(metrics_path='reports/training_metrics.txt')
 
         early_stop_callback = (
             [
