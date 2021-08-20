@@ -12,3 +12,7 @@ arg_parser = argparse.ArgumentParser(
 # Command choice
 command_subparser = arg_parser.add_subparsers(
     dest="command", help="command (refer commands section in documentation)"
+)
+
+parser_req = command_subparser.add_parser(
+    "requirements", help="Install Python Dependencies."
