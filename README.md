@@ -8,8 +8,6 @@ app_file: app.py
 pinned: false
 ---
 
-
-
 <h1 align="center">t5s</h1>
 
 [![pypi Version](https://img.shields.io/pypi/v/t5s.svg?logo=pypi&logoColor=white)](https://pypi.org/project/t5s/)
