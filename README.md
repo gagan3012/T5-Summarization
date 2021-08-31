@@ -23,6 +23,7 @@ Here you will find the code for the project, but also the data, models, pipeline
 
 Have a great idea for how to improve the model? Want to add data and metrics to make it more explainable/fair? We'd love to get your help.
 
+Blog: https://dagshub.com/blog/machine-summarization-an-open-data-science-project/
 
 ## Installation
 
